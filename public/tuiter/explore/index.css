@@ -92,3 +92,18 @@ body {
 .wd-rounded-20 {
     border-radius: 20px;
 }
+
+.wd-position {
+    position: relative;
+    left: 90%;
+}
+
+.wd-col-fourth-page {
+    width: 25%;
+    float: left;
+}
+
+.wd-col-three-fourths-page {
+    width: 75%;
+    float: left;
+}
