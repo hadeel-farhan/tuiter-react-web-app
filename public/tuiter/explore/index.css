@@ -59,6 +59,12 @@
     border-top: 2px solid rgb(110, 118, 125);
 }
 
+.wd-border-bottom {
+    border-left: 2px solid rgb(110, 118, 125);
+    border-right: 2px solid rgb(110, 118, 125);
+    border-bottom: 2px solid rgb(110, 118, 125);
+}
+
 body {
     background-color: black;
 }
@@ -99,11 +105,11 @@ body {
 }
 
 .wd-col-fourth-page {
-    width: 25%;
+    width: 10%;
     float: left;
 }
 
 .wd-col-three-fourths-page {
-    width: 75%;
+    width: 90%;
     float: left;
 }
