@@ -74,6 +74,7 @@ body {
     border-right: 2px solid rgb(110, 118, 125);
     position: relative;
     left: 16px;
+    max-width: 98%;
 }
 
 .wd-search-bar {
