@@ -1,3 +1,94 @@
-.wd-float {
+.wd-float-left {
     float: left;
+}
+
+.wd-float-right {
+    float: right;
+    width: 20%;
+}
+
+.wd-sub-text {
+    font-size: 13px;
+
+}
+
+.wd-lgray-text {
+    color: rgb(110, 118, 125);
+}
+
+.wd-bold-text {
+    font-weight: bold;
+}
+
+.wd-float-clear {
+    clear: both
+}
+
+.wd-white-text {
+    color: white;
+}
+
+.wd-bg-dgray {
+    background-color: darkgray;
+}
+
+.wd-nav-link {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+}
+
+.wd-link-highlight {
+    color: rgb(29, 161, 242);
+    border-bottom: 2px solid rgb(29, 161, 242);
+    font-size: 15px;
+}
+
+.wd-padding-16 {
+    padding: 16px;
+}
+
+.wd-padding-left-16 {
+    padding-left: 16px;
+}
+
+.wd-border {
+    border-bottom: 2px solid rgb(110, 118, 125);
+}
+
+.wd-border-top {
+    border-top: 2px solid rgb(110, 118, 125);
+}
+
+body {
+    background-color: black;
+}
+
+.wd-main-box {
+    border-left: 2px solid rgb(110, 118, 125);
+    border-right: 2px solid rgb(110, 118, 125);
+    position: relative;
+    left: 16px;
+}
+
+.wd-search-bar {
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 60px;
+    width: 30%;
+    margin-left: 16px;
+
+}
+
+.wd-icon-img {
+    max-width: 10%;
+    height: auto;
+}
+
+.wd-size-100 {
+    height: 100px;
+    width: 100px;
+}
+
+.wd-rounded-20 {
+    border-radius: 20px;
 }
