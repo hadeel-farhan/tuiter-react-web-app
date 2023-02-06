@@ -1,0 +1,68 @@
+.wd-padding-left-16 {
+    padding-left: 16px;
+}
+
+
+.wd-padding-top-12 {
+    padding-top: 12px;
+}
+
+.wd-padding-bottom-12 {
+    padding-bottom: 12px;
+}
+
+.wd-padding-right-12 {
+    padding-right: 12px;
+}
+
+.wd-white-text {
+    color: white;
+}
+
+.wd-lgray-text {
+    color: lightgray;
+}
+
+.wd-font-20 {
+    font-size: 20px;
+}
+
+.wd-font-13 {
+    font-size: 13px;
+}
+
+.wd-font-15 {
+    font-size: 15px;
+}
+
+.wd-border {
+    border: 1px solid lightgray;
+}
+
+.wd-profile {
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+}
+
+.wd-float-clear {
+    clear: both
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-left-10 {
+    float: left;
+    width: 10%;
+}
+
+.wd-float-left-10 {
+    float: left;
+    width: 90%;
+}
+
+.wd-width-506 {
+    max-width: 506px;
+}
