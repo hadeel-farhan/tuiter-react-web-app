@@ -26,6 +26,7 @@
 .wd-white-text {
     color: white;
 }
+
 .wd-red-text {
     color: red;
 }
@@ -113,4 +114,23 @@ body {
 .icon-size {
     width: 15px;
     height: 15px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
 }
