@@ -7,6 +7,10 @@
     padding-top: 12px;
 }
 
+.wd-padding-12 {
+    padding: 12px;
+}
+
 .wd-padding-bottom-12 {
     padding-bottom: 12px;
 }
@@ -15,8 +19,15 @@
     padding-right: 12px;
 }
 
+.wd-padding-right-20 {
+    padding-right: 20px;
+}
+
 .wd-white-text {
     color: white;
+}
+.wd-red-text {
+    color: red;
 }
 
 .wd-lgray-text {
@@ -31,12 +42,20 @@
     font-size: 13px;
 }
 
+.wd-font-12 {
+    font-size: 12px;
+}
+
 .wd-font-15 {
     font-size: 15px;
 }
 
 .wd-border {
     border: 1px solid lightgray;
+}
+
+.wd-border-top {
+    border-top: 1px solid lightgray;
 }
 
 .wd-profile {
@@ -64,5 +83,34 @@
 }
 
 .wd-width-506 {
-    max-width: 506px;
+    width: 506px;
+}
+
+.wd-height-264 {
+    height: 264px;
+}
+
+body {
+    background-color: black;
+}
+
+.rounded-corners-bottom {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.rounded-corners-top {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.icon-size {
+    width: 15px;
+    height: 15px;
 }
