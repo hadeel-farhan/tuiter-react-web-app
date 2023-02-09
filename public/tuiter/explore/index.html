@@ -4,140 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="wd-main-box">
-        <div>
-            <div class="wd-search-bar wd-white-text wd-bg-dgray wd-float-left">
-                Search Tuiter
-            </div>
-            <div class="wd-float-left wd-padding-left-16">
-                <a href="explore-settings.html"><img src="icon.png" class="wd-icon-img"></a>
-            </div>
+    <div class="row">
+        <div class="col-2 col-md-1 col-xl-2 bg-warning">
+            <h3>Sidebar</h3>
         </div>
-        <div class="wd-nav-bar wd-float-clear">
-            <div class="wd-nav-item wd-float-left wd-padding-16 wd-link-highlight">
-                For you
+        <div class="col-8 col-md-9 col-xl-8 bg-gray">
+            <h3>Main content</h3>
+            <div class="mb-3">
+                <input type="searcg" class="form-control" id="input1" placeholder="Search Tuiter">
             </div>
-            <div class="wd-nav-item wd-float-left wd-nav-link wd-padding-16">
-                Trending
-            </div>
-            <div class="wd-nav-item wd-float-left wd-nav-link wd-padding-16">
-                COVID-19
-            </div>
-            <div class="wd-nav-item wd-float-left wd-nav-link wd-padding-16">
-                News
-            </div>
-            <div class="wd-nav-item wd-float-left wd-nav-link wd-padding-16">
-                Sports
-            </div>
-            <div class="wd-nav-item wd-float-left wd-nav-link wd-padding-16">
-                Entertainment
-            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entertainment</a>
+                </li>
+            </ul>
+            <img src="rocket.png">
         </div>
-
-        <div class="wd-tuits wd-float-clear wd-border-top">
-            <div class="wd-trending wd-padding-16">
-                <div class="wd-sub-text wd-lgray-text">
-                    Trending in Science
-                </div>
-                <div class="wd-white-text">
-                    Starship
-                </div>
-                <div class="wd-sub-text wd-lgray-text">
-                    55.5K Tweets
-                </div>
-            </div>
-            <div class="wd-trending wd-padding-16">
-                <div class="wd-sub-text wd-lgray-text">
-                    Trending in Science
-                </div>
-                <div class="wd-white-text">
-                    Starship
-                </div>
-                <div class="wd-sub-text wd-lgray-text">
-                    55.5K Tweets
-                </div>
-            </div>
-            <div class="wd-recent wd-padding-16 wd-border-top">
-                <div class="wd-col-three-fourths-page">
-                    <div>
-                        <p class="wd-white-text wd-sub-text wd-bold-text wd-float-left">
-                            The New York Times
-                        </p>
-                        <p class="wd-sub-text wd-lgray-text wd-float-left">
-                            .Yesterday
-                        </p>
-                    </div>
-                    <div class="wd-white-text  wd-float-clear">
-                        CNN Trouble stuff happened
-                    </div>
-                </div>
-                <div class="wd-image wd-col-fourth-page">
-                    <img src="news.png" class="wd-size-100 wd-rounded-20">
-                </div>
-            </div>
-            <div class="wd-live wd-padding-16 wd-float-clear wd-border-top wd-border-top">
-                <div class="wd-col-three-fourths-page">
-                    <div class="wd-sub-text wd-lgray-text">
-                        COVID-19 . LIVE
-                    </div>
-                    <div class="wd-white-text">
-                        News and updates for Massachusetts
-                    </div>
-                </div>
-                <div class="wd-image wd-col-fourth-page">
-                    <img src="news.png" class="wd-size-100 wd-rounded-20">
-                </div>
-            </div>
-            <div class="wd-live wd-padding-16 wd-float-clear wd-border-top wd-border-top">
-                <div class="wd-col-three-fourths-page">
-                    <div class="wd-sub-text wd-lgray-text">
-                        COVID-19 . LIVE
-                    </div>
-                    <div class="wd-white-text">
-                        News and updates for Massachusetts
-                    </div>
-                </div>
-                <div class="wd-image wd-col-fourth-page">
-                    <img src="news.png" class="wd-size-100 wd-rounded-20">
-                </div>
-            </div>
-
-            <div class="wd-recent wd-padding-16 wd-float-clear wd-border-top">
-                <div class="wd-col-three-fourths-page">
-                    <div>
-                        <p class="wd-white-text wd-sub-text wd-bold-text wd-float-left">
-                            The New York Times
-                        </p>
-                        <p class="wd-sub-text wd-lgray-text wd-float-left">
-                            .Yesterday
-                        </p>
-                    </div>
-                    <div class="wd-white-text  wd-float-clear">
-                        CNN Trouble stuff happened
-                    </div>
-                </div>
-                <div class="wd-image wd-col-fourth-page">
-                    <img src="news.png" class="wd-size-100 wd-rounded-20">
-                </div>
-            </div>
-            <div class="wd-trending wd-padding-16 wd-float-clear wd-border wd-border-top">
-                <div class="wd-sub-text wd-lgray-text">
-                    Trending in Science
-                </div>
-                <div class="wd-white-text">
-                    Starship
-                </div>
-                <div class="wd-sub-text wd-lgray-text">
-                    55.5K Tweets
-                </div>
-            </div>
-
+        <div class="col-2 d-none d-lg-block col-xl-2 bg-danger text-white">
+            <h3>Sidebar</h3>
         </div>
     </div>
+
 
 
 </body>
