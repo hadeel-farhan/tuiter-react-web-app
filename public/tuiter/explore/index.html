@@ -13,41 +13,58 @@
     <div class="row">
         <!-- <div class="col-1 d-none d-lg-block col-xl-3 bg-danger pt-2"> -->
 
-        <div class="col-1 col-s-1 col-md-2 col-xl-2 bg-warning ">
-            <h3>Sidebar</h3>
-            <ul class="nav nav-pills">
-                <div>
+        <div class="col-1 col-xs-* col-s-1 col-sm-* col-md-2 col-l-* col-xl-2 bg-warning">
+            <ul class="nav nav-pills m-3">
+                <div class="cards">
                     <div class="nav-item card">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#"><i class="fab fa-twitter"></i> </a>
                     </div>
                     <div class="nav-item card">
-                        <a class="nav-link active" href="#">Explore</a>
+                        <a class="nav-link" href="#"><i class="fa fa-home float-start"></i> <span
+                                class="d-none d-xl-block"> Home
+                            </span></a>
                     </div>
                     <div class="nav-item card">
-                        <a class="nav-link" href="#">Notifications</a>
+                        <a class="nav-link active" href="#"><i class="fa fa-hashtag float-start"></i> <span
+                                class="d-none d-xl-block"> Explore </span></a>
                     </div>
                     <div class="nav-item card">
-                        <a class="nav-link" href="#">Messages</a>
+                        <a class="nav-link" href="#"><i class="fa fa-bell float-start"></i> <span
+                                class="d-none d-xl-block float-end">
+                                Notifications </span></a>
                     </div>
                     <div class="nav-item card">
-                        <a class="nav-link" href="#">Bookmarks</a>
+                        <a class="nav-link" href="#"> <i class="fa fa-comment float-start"></i> <span
+                                class="d-none d-xl-block">
+                                Messages </span></a>
                     </div>
                     <div class="nav-item card">
-                        <a class="nav-link" href="#">Lists</a>
+                        <a class="nav-link" href="#"><i class="fa fa-bookmark float-start"></i> <span
+                                class="d-none d-xl-block">
+                                Bookmarks </span></a>
                     </div>
                     <div class="nav-item card">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" href="#"><i class="fa fa-list float-start"></i> <span
+                                class="d-none d-xl-block"> Lists
+                            </span></a>
                     </div>
                     <div class="nav-item card">
-                        <a class="nav-link" href="#">More</a>
+                        <a class="nav-link" href="#"><i class="fa fa-circle float-start"></i> <span
+                                class="d-none d-xl-block">
+                                Profile </span></a>
                     </div>
-                    <button class="btn btn-primary ">Tweet</button>
+                    <div class="nav-item card">
+                        <a class="nav-link" href="#"><i class="fa fa-bookmark float-start"></i> <span
+                                class="d-none d-xl-block">
+                                More </span></a>
+                    </div>
+                    <button class="btn btn-primary m-3 rounded-pill">Tweet</button>
             </ul>
         </div>
-        <div class="col-8 col-md-8 col-xl-5 bg-gray">
-            <h3>Main content</h3>
+        <div class="col-8 col-md-8 col-xl-5 bg-gray mt-3">
             <div class="mb-3">
-                <input type="searcg" class="form-control" id="input1" placeholder="Search Tuiter">
+                <i class="fa fa-cog float-end"></i>
+                <input type="search" class="form-control form rounded-pill" id="input1" placeholder="Search Tuiter">
             </div>
             <ul class="nav nav-tabs">
                 <li class="nav-item">
@@ -118,16 +135,17 @@
 
         </div>
 
-        <div class="col-1 d-none d-lg-block col-xl-3 bg-danger pt-2">
-            <div class="card p-0 pt-2  ps-2">
+        <div class="col-1 d-none d-lg-block col-xl-3 bg-danger pt-3">
+            <div class="card p-0 pt-2 ps-2">
                 <div class="card-body p-0">
                     <p class="fw-bold p-0">Who to follow</p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <img class="float-start mw-1 mh-1 me-3" src="rocket.png" style="width: 3rem; height: 3rem;">
-                    <button class="btn btn-primary float-end">
+                    <img class="float-start mw-1 mh-1 me-3 rounded-circle" src="rocket.png"
+                        style="width: 3rem; height: 3rem;">
+                    <button class="btn btn-primary float-end rounded-pill">
                         Follow
                     </button>
                     <span class="fw-bold">Java</span>
@@ -136,8 +154,9 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <img class="float-start mw-1 mh-1 me-3" src="rocket.png" style="width: 3rem; height: 3rem;">
-                    <button class="btn btn-primary float-end">
+                    <img class="float-start mw-1 mh-1 me-3 rounded-circle" src="rocket.png"
+                        style="width: 3rem; height: 3rem;">
+                    <button class="btn btn-primary float-end rounded-pill">
                         Follow
                     </button>
                     <span class="fw-bold">Java</span>
@@ -146,8 +165,9 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <img class="float-start mw-1 mh-1 me-3" src="rocket.png" style="width: 3rem; height: 3rem;">
-                    <button class="btn btn-primary float-end">
+                    <img class="float-start mw-1 mh-1 me-3 rounded-circle" src="rocket.png"
+                        style="width: 3rem; height: 3rem;">
+                    <button class="btn btn-primary float-end rounded-pill">
                         Follow
                     </button>
                     <span class="fw-bold">Java</span>
@@ -156,8 +176,9 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <img class="float-start mw-1 mh-1 me-3" src="rocket.png" style="width: 3rem; height: 3rem;">
-                    <button class="btn btn-primary float-end">
+                    <img class="float-start mw-1 mh-1 me-3 rounded-circle" src="rocket.png"
+                        style="width: 3rem; height: 3rem;">
+                    <button class="btn btn-primary float-end rounded-pill">
                         Follow
                     </button>
                     <span class="fw-bold">Java</span>

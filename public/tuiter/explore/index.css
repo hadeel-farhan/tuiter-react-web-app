@@ -1,4 +1,12 @@
-.p {
+p {
     padding: 0px;
     margin: 0px;
+}
+
+.form {
+    max-width: 95%;
+}
+
+.cards {
+    max-width: 100%;
 }
