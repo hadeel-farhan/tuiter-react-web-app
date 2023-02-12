@@ -10,3 +10,13 @@ p {
 .cards {
     max-width: 100%;
 }
+
+.img-card-5 {
+    width: 5rem;
+    height: 5rem;
+}
+
+.img-card-3 {
+    width: 3rem;
+    height: 3rem;
+}
