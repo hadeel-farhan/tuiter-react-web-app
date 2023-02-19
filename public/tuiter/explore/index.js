@@ -1,4 +1,4 @@
-import NavigationSidebar from "index2.js";
+import NavigationSidebar from "./index2.js";
 
 function exploreComponent() {
     $('#wd-explore').append(`
