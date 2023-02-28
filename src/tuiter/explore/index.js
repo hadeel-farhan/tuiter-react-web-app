@@ -3,7 +3,7 @@ import PostSummaryList from "../post-summary-list";
 import "./index.css";
 const ExploreComponent = () => {
     return (
-        <>
+        <div className="container">
             <div className="row">
                 <div className="col-11 position-relative">
                     <input placeholder="Search Tuiter"
@@ -28,12 +28,12 @@ const ExploreComponent = () => {
                 </li>
             </ul>
             <div className="position-relative mb-2">
-                <img src="/images/rocket.jpg" className="w-100" />
+                <img src="/images/rocket.png" className="w-100" />
                 <h1 className="position-absolute wd-nudge-up text-white">
                     SpaceX Starship</h1>
             </div>
             <PostSummaryList />
-        </>
+        </div>
     );
 };
 export default ExploreComponent;
