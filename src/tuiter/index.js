@@ -2,17 +2,20 @@ import React from 'react';
 import ExploreComponent from "./explore";
 import NavigationSidebar
     from "./navigation-sidebar";
+import HomeTuits from './home';
 import WhoToFollowList from "./who-to-follow-list";
 import whoReducer
     from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
+import homeReducer from "./tuits/home-tuits-reducer";
+
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import { configureStore }
     from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
 const store = configureStore(
-    { reducer: { who: whoReducer, tuits: tuitsReducer } });
+    { reducer: { who: whoReducer, tuits: tuitsReducer, home: homeReducer } });
 
 function Tuiter() {
     return (
@@ -28,7 +31,8 @@ function Tuiter() {
                         <Route path='/explore' component={ExploreComponent} />
                         <Route path='/home' component={WhoToFollowList} />
                     </Router> */}
-                    <ExploreComponent />
+                    {/* <ExploreComponent /> */}
+                    <HomeTuits />
                 </div>
                 <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                     <WhoToFollowList />
