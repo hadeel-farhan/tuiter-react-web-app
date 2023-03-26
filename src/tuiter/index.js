@@ -18,31 +18,25 @@ const store = configureStore(
     { reducer: { who: whoReducer, tuits: tuitsReducer, home: homeReducer } });
 
 function Tuiter() {
-    const [screen, setScreen] = React.useState("otherScreen");
+    const [screen, setScreen] = React.useState("explore");
 
     return (
         <Provider store={store}>
 
             <div className="row mt-2">
                 <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar active="explore" />
+                    <NavigationSidebar active={screen} />
                 </div>
                 <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                     style={{ "position": "relative" }}>
-                    {/* <Router>
-                        <Route path='/explore' component={ExploreComponent} />
-                        <Route path='/home' component={HomeTuits} />
-                    </Router> */}
-                    {/* <ExploreComponent /> */}
-
                     <div>
                         <nav>
                             <button onClick={() => setScreen("home")}>Home</button>
-                            <button onClick={() => setScreen("otherScreen")}>Explore</button>
+                            <button onClick={() => setScreen("explore")}>Explore</button>
                         </nav>
                         {screen === "home" ?
                             <HomeTuits />
-                            : screen === "otherScreen" ?
+                            : screen === "explore" ?
                                 <ExploreComponent />
                                 : null}
                     </div>
