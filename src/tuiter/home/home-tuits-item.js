@@ -1,4 +1,6 @@
 import React from "react";
+import LikeButton from "./heart";
+
 const PostSummaryItem = (
     {
         post = {
@@ -17,7 +19,6 @@ const PostSummaryItem = (
                     <img height={48} width={48} className="float-start rounded-circle" src={`/images/${post.image}`} />
                 </div>
                 <div className="col-10">
-                    {/* <div>{post.userName} . {post.time}</div> */}
                     <div><span className="fw-bolder">{post.userName} </span> <span> {post.handle} . {post.time}</span> </div>
                     <div>{post.title}</div>
                 </div>
@@ -25,9 +26,11 @@ const PostSummaryItem = (
             <br></br>
             <div className="row">
                 <div className="col-2"> </div>
-                <div className="col-2">{post.replies} </div>
-                <div className="col-2">{post.retuits}</div>
-                <div className="col-2">{post.likes}</div>
+                <div className="col-2"><i class="bi bi-chat"></i> {post.replies} </div>
+                <div className="col-2"><i class="bi bi-share"></i> {post.retuits}</div>
+                <div className="col-2">
+                    <LikeButton likes={post.likes} />
+                </div>
             </div>
         </li >
     );

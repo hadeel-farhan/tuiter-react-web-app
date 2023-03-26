@@ -18,6 +18,8 @@ const store = configureStore(
     { reducer: { who: whoReducer, tuits: tuitsReducer, home: homeReducer } });
 
 function Tuiter() {
+    const [screen, setScreen] = React.useState("otherScreen");
+
     return (
         <Provider store={store}>
 
@@ -29,10 +31,21 @@ function Tuiter() {
                     style={{ "position": "relative" }}>
                     {/* <Router>
                         <Route path='/explore' component={ExploreComponent} />
-                        <Route path='/home' component={WhoToFollowList} />
+                        <Route path='/home' component={HomeTuits} />
                     </Router> */}
                     {/* <ExploreComponent /> */}
-                    <HomeTuits />
+
+                    <div>
+                        <nav>
+                            <button onClick={() => setScreen("home")}>Home</button>
+                            <button onClick={() => setScreen("otherScreen")}>Explore</button>
+                        </nav>
+                        {screen === "home" ?
+                            <HomeTuits />
+                            : screen === "otherScreen" ?
+                                <ExploreComponent />
+                                : null}
+                    </div>
                 </div>
                 <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                     <WhoToFollowList />

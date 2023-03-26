@@ -5,13 +5,16 @@ import PostSummaryItem
 const HomeTuits = () => {
     const postsArray = useSelector(state => state.home)
     return (
-        <ul className="list-group">
-            {
-                postsArray.map(post =>
-                    <PostSummaryItem
-                        key={post._id} post={post} />)
-            }
-        </ul>
+        <div>
+            <h3> Home</h3>
+            <ul className="list-group">
+                {
+                    postsArray.map(post =>
+                        <PostSummaryItem
+                            key={post._id} post={post} />)
+                }
+            </ul>
+        </div>
     );
 };
 export default HomeTuits;
