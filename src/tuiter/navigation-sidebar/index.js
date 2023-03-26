@@ -1,41 +1,43 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 const NavigationSidebar = (
-    {
-        active = 'explore'
-    }
+  {
+    active = 'explore'
+  }
 ) => {
-    return (   <div className="list-group">
+  return (<div className="list-group">
     <a className="list-group-item">Tuiter</a>
     <a className={`list-group-item
-                   ${active === 'home'?'active':''}`}>
-      Home
+                   ${active === 'home' ? 'active' : ''}`}>
+      <Link to="/home">Home</Link>
     </a>
     <a className={`list-group-item
-                   ${active === 'explore'?'active':''}`}>
+                   ${active === 'explore' ? 'active' : ''}`}>
       Explore
     </a>
     <a className={`list-group-item
-                   ${active === 'notifications'?'active':''}`}>
+                   ${active === 'notifications' ? 'active' : ''}`}>
       Notifications
     </a>
     <a className={`list-group-item
-                   ${active === 'messages'?'active':''}`}>
+                   ${active === 'messages' ? 'active' : ''}`}>
       Messages
     </a>
     <a className={`list-group-item
-                   ${active === 'bookmarks'?'active':''}`}>
+                   ${active === 'bookmarks' ? 'active' : ''}`}>
       Bookmarks
     </a>
     <a className={`list-group-item
-                   ${active === 'lists'?'active':''}`}>
+                   ${active === 'lists' ? 'active' : ''}`}>
       Lists
     </a>
     <a className={`list-group-item
-                   ${active === 'profile'?'active':''}`}>
+                   ${active === 'profile' ? 'active' : ''}`}>
       Profile
     </a>
     <a className={`list-group-item
-                   ${active === 'more'?'active':''}`}>
+                   ${active === 'more' ? 'active' : ''}`}>
       More
     </a>
   </div>);

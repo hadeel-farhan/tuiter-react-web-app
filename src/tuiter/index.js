@@ -6,6 +6,7 @@ import WhoToFollowList from "./who-to-follow-list";
 import whoReducer
     from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import { configureStore }
     from '@reduxjs/toolkit';
@@ -23,6 +24,10 @@ function Tuiter() {
                 </div>
                 <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                     style={{ "position": "relative" }}>
+                    {/* <Router>
+                        <Route path='/explore' component={ExploreComponent} />
+                        <Route path='/home' component={WhoToFollowList} />
+                    </Router> */}
                     <ExploreComponent />
                 </div>
                 <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
