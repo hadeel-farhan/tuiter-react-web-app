@@ -1,5 +1,13 @@
 import React from "react";
 import LikeButton from "./heart";
+import { useDispatch } from "react-redux";
+import { deleteTuit } from "../tuits/tuits-reducer";
+
+// const dispatch = useDispatch();
+const deleteTuitHandler = (id) => {
+    // dispatch(deleteTuit(id));
+    deleteTuit(id);
+}
 
 const PostSummaryItem = (
     {
@@ -19,6 +27,9 @@ const PostSummaryItem = (
                     <img height={48} width={48} className="float-start rounded-circle" src={`/images/${post.image}`} />
                 </div>
                 <div className="col-10">
+                    <i className="bi bi-x-lg float-end"
+                        onClick={() => deleteTuitHandler(post._id)}
+                    ></i>
                     <div><span className="fw-bolder">{post.userName} </span> <span> {post.handle} . {post.time}</span> </div>
                     <div>{post.title}</div>
                 </div>
