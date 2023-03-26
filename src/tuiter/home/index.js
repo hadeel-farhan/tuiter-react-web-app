@@ -1,20 +1,15 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import PostSummaryItem
-    from "./home-tuits-item";
-const HomeTuits = () => {
-    const postsArray = useSelector(state => state.home)
+import TuitsList from "./tuites-list"
+import WhatsHappening from "./whats-happening";
+
+const HomeComponent = () => {
     return (
-        <div>
-            <h3> Home</h3>
-            <ul className="list-group">
-                {
-                    postsArray.map(post =>
-                        <PostSummaryItem
-                            key={post._id} post={post} />)
-                }
-            </ul>
-        </div>
+        <>
+            <h4>Home</h4>
+            <WhatsHappening />
+            <TuitsList />
+        </>
     );
 };
-export default HomeTuits;
+
+export default HomeComponent;
