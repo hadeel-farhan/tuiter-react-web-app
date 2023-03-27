@@ -36,7 +36,7 @@ const HomeTuitItem = (
                 <div className="col-2"><i class="bi bi-chat"></i> {post.replies} </div>
                 <div className="col-2"><i class="bi bi-share"></i> {post.retuits}</div>
                 <div className="col-2">
-                    <LikeButton likes={post.likes} />
+                    <LikeButton likes={post.likes} liked={post.liked} />
                 </div>
             </div>
         </li >
