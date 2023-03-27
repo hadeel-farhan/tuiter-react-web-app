@@ -12,11 +12,6 @@ import { deleteTuit } from "../tuits/tuits-reducer";
 const HomeTuitItem = (
     {
         post = {
-            "topic": "Space",
-            "userName": "SpaceX",
-            "time": "2h",
-            "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "rocket.png",
         }
     }
 ) => {
@@ -27,13 +22,12 @@ const HomeTuitItem = (
                     <img height={48} width={48} className="float-start rounded-circle" src={`/images/${post.image}`} />
                 </div>
                 <div className="col-10">
-                    <i className="bi bi-x-lg float-end"
+                    {/* <i className="bi bi-x-lg float-end"
                     // onClick={() => deleteTuitHandler(post._id)}
-                    ></i>
+                    ></i> */}
                     <div><span className="fw-bolder">{post.userName} </span> <span> {post.handle} . {post.time}</span> </div>
                     <div>{post.title}</div>
                     <div>{post.tuit}</div>
-
                 </div>
             </div>
             <br></br>
