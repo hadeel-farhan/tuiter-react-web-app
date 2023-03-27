@@ -4,19 +4,19 @@ import { useDispatch } from "react-redux";
 import { deleteTuit } from "../tuits/tuits-reducer";
 
 // const dispatch = useDispatch();
-const deleteTuitHandler = (id) => {
-    // dispatch(deleteTuit(id));
-    deleteTuit(id);
-}
+// const deleteTuitHandler = (id) => {
+//     // dispatch(deleteTuit(id));
+//     deleteTuit(id);
+// }
 
-const PostSummaryItem = (
+const HomeTuitItem = (
     {
         post = {
             "topic": "Space",
             "userName": "SpaceX",
             "time": "2h",
             "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "rocket.png"
+            "image": "rocket.png",
         }
     }
 ) => {
@@ -28,10 +28,12 @@ const PostSummaryItem = (
                 </div>
                 <div className="col-10">
                     <i className="bi bi-x-lg float-end"
-                        onClick={() => deleteTuitHandler(post._id)}
+                    // onClick={() => deleteTuitHandler(post._id)}
                     ></i>
                     <div><span className="fw-bolder">{post.userName} </span> <span> {post.handle} . {post.time}</span> </div>
                     <div>{post.title}</div>
+                    <div>{post.tuit}</div>
+
                 </div>
             </div>
             <br></br>
@@ -46,4 +48,4 @@ const PostSummaryItem = (
         </li >
     );
 };
-export default PostSummaryItem;
+export default HomeTuitItem;

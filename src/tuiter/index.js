@@ -7,15 +7,13 @@ import WhoToFollowList from "./who-to-follow-list";
 import whoReducer
     from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
-import homeReducer from "./tuits/home-tuits-reducer";
-
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import { configureStore }
     from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
 const store = configureStore(
-    { reducer: { who: whoReducer, tuits: tuitsReducer, home: homeReducer } });
+    { reducer: { who: whoReducer, tuits: tuitsReducer } });
 
 function Tuiter() {
     const [screen, setScreen] = React.useState("explore");
