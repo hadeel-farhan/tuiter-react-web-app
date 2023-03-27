@@ -7,7 +7,6 @@ const HomeTuits = () => {
     const postsArray = useSelector(state => state.home)
     return (
         <div>
-            <h3> Home</h3>
             <ul className="list-group">
                 {
                     postsArray.map(post =>
