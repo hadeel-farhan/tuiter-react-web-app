@@ -3,18 +3,16 @@ import LikeButton from "./heart";
 import { useDispatch } from "react-redux";
 import { deleteTuit } from "../tuits/tuits-reducer";
 
-// const dispatch = useDispatch();
-const deleteTuitHandler = (id) => {
-    // dispatch(deleteTuit(id));
-    deleteTuit(id);
-}
-
 const HomeTuitItem = (
     {
         post = {
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
     return (
         <li className="list-group-item">
             <div className="row">
@@ -22,9 +20,9 @@ const HomeTuitItem = (
                     <img height={48} width={48} className="float-start rounded-circle" src={`/images/${post.image}`} />
                 </div>
                 <div className="col-10">
-                    <i className="bi bi-x-lg float-end"
-                        onClick={() => deleteTuitHandler(post._id)}
-                    ></i>
+                    <button onClick={() => deleteTuitHandler(post._id)} className="btn p-0 float-end">
+                        <i className="bi bi-x-lg float-end"></i>
+                    </button>
                     <div><span className="fw-bolder">{post.userName} </span> <span> {post.handle} . {post.time}</span> </div>
                     <div>{post.title}</div>
                     <div>{post.tuit}</div>
