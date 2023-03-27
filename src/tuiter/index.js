@@ -19,7 +19,7 @@ const store = configureStore(
 
 function Tuiter() {
     const [screen, setScreen] = React.useState("explore");
-
+    let path = window.location.pathname;
     return (
         <Provider store={store}>
 
@@ -30,15 +30,13 @@ function Tuiter() {
                 <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                     style={{ "position": "relative" }}>
                     <div>
-                        <nav>
-                            <button onClick={() => setScreen("home")}>Home</button>
-                            <button onClick={() => setScreen("explore")}>Explore</button>
-                        </nav>
-                        {screen === "home" ?
+                        {path === "/home" ?
                             <HomeTuits />
-                            : screen === "explore" ?
+                            : path === "/explore" ?
                                 <ExploreComponent />
                                 : null}
+
+
                     </div>
                 </div>
                 <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import './index.css';
 
 const NavigationSidebar = (
   {
@@ -6,15 +8,21 @@ const NavigationSidebar = (
   }
 ) => {
   const [screen, setScreen] = React.useState("explore");
+  let path = window.location.pathname;
+
   return (<div className="list-group">
     <a className="list-group-item">Tuiter</a>
     <a className={`list-group-item
-                   ${active === 'home' ? 'active' : ''}`}>
-      <button className="btn p-0" onClick={() => setScreen("home")}>Home</button>
+                   ${path === '/home' ? 'active' : ''}`}>
+      <button className="btn p-0 " onClick={() => setScreen("home")}>
+        <Link to="/home">Home</Link>
+      </button>
     </a>
     <a className={`list-group-item
-                   ${active === 'explore' ? 'active' : ''}`}>
-      <button className="btn p-0" onClick={() => setScreen("explore")}>Explore</button>
+                   ${path === '/explore' ? 'active' : ''}`}>
+      <button className="btn p-0" onClick={() => setScreen("explore")}>
+        <Link to="/explore">Explore</Link>
+      </button>
     </a>
     <a className={`list-group-item
                    ${active === 'notifications' ? 'active' : ''}`}>

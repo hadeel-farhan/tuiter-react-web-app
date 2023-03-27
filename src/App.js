@@ -19,6 +19,10 @@ function App() {
           element={<HelloWorld />} />
         <Route path="/tuiter"
           element={<Tuiter />} />
+        <Route path="/home"
+          element={<Tuiter />} />
+        <Route path="/explore"
+          element={<Tuiter />} />
         <Route path="/*" element={<Labs />} />
       </Routes>
     </ BrowserRouter>
