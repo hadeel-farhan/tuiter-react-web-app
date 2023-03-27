@@ -8,7 +8,11 @@ const NavigationSidebar = (
   }
 ) => {
   const [screen, setScreen] = React.useState("explore");
+
   let path = window.location.pathname;
+  if (path == "/" || path == "/tuiter") {
+    path = "/explore";
+  }
 
   return (<div className="list-group">
     <a className="list-group-item">Tuiter</a>

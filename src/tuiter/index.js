@@ -32,7 +32,7 @@ function Tuiter() {
                             <HomeTuits />
                             : path === "/explore" ?
                                 <ExploreComponent />
-                                : null}
+                                : <ExploreComponent />}
 
 
                     </div>
