@@ -15,8 +15,9 @@ import { Provider } from "react-redux";
 const store = configureStore(
     { reducer: { who: whoReducer, tuitsData: tuitsReducer } });
 
+
 function Tuiter() {
-    const [screen, setScreen] = React.useState("explore");
+    const [screen, setScreen] = React.useState("home");
     let path = window.location.pathname;
     return (
         <Provider store={store}>
@@ -28,13 +29,19 @@ function Tuiter() {
                 <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                     style={{ "position": "relative" }}>
                     <div>
-                        {path === "/home" ?
-                            <HomeTuits />
-                            : path === "/explore" ?
-                                <ExploreComponent />
+                        {/* <BrowserRouter>
+                            <Routes>
+                                <Route path="/explore"
+                                    element={<ExploreComponent />} />
+                                <Route path="/home"
+                                    element={<HomeTuits />} />
+                            </Routes>
+                        </BrowserRouter> */}
+                        {(path === "/explore" || path === "/tuiter/") ?
+                            <ExploreComponent />
+                            : path === "/home" ?
+                                <HomeTuits />
                                 : <ExploreComponent />}
-
-
                     </div>
                 </div>
                 <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
