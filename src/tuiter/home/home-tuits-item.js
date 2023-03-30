@@ -44,10 +44,10 @@ const HomeTuitItem = (
                 <div className="col-2">
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...post,
-                        likes: post.likes - 1
+                        dislikes: post.dislikes + 1
                     }
                     ))} className="bi bi-hand-thumbs-down me-2 text-black"></i>
-                    {post.likes}
+                    {post.dislikes}
                 </div>
                 {/* 
                 <div className="col-2">
