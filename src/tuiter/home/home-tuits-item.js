@@ -1,7 +1,7 @@
 import React from "react";
 import LikeButton from "./heart";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../tuits/tuits-reducer";
+import { deleteTuitThunk } from "../../services/tuits-thunks";
 
 const HomeTuitItem = (
     {
@@ -11,7 +11,7 @@ const HomeTuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return (
         <li className="list-group-item">
@@ -33,6 +33,14 @@ const HomeTuitItem = (
                 <div className="col-2"> </div>
                 <div className="col-2"><i class="bi bi-chat"></i> {post.replies} </div>
                 <div className="col-2"><i class="bi bi-share"></i> {post.retuits}</div>
+                {/* <div>
+                    Likes: {tuit.likes}
+                    <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        likes: tuit.likes + 1
+                    })} className="bi bi-heart-fill me-2 text-danger"></i>
+                </div> */}
+
                 <div className="col-2">
                     <LikeButton likes={post.likes} liked={post.liked} />
                 </div>
