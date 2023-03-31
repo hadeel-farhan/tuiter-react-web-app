@@ -13,6 +13,42 @@ const HomeTuitItem = (
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuitThunk(id));
     }
+
+    let fill = "bi bi-hand-thumbs-down-fill me-2 text-black";
+    // let unfill = "bi bi-hand-thumbs-down me-2 text-black";
+
+    const disliking = () => {
+        if (post.disliked) {
+            dispatch(updateTuitThunk({
+                ...post,
+                dislikes: post.dislikes - 1,
+                disliked: !post.disliked
+            }))
+        }
+        else {
+            dispatch(updateTuitThunk({
+                ...post,
+                dislikes: post.dislikes + 1,
+                disliked: !post.disliked
+            }))
+        }
+    }
+    const liking = () => {
+        if (post.liked) {
+            dispatch(updateTuitThunk({
+                ...post,
+                likes: post.likes - 1,
+                liked: !post.liked
+            }))
+        }
+        else {
+            dispatch(updateTuitThunk({
+                ...post,
+                likes: post.likes + 1,
+                liked: !post.liked
+            }))
+        }
+    }
     return (
         <li className="list-group-item">
             <div className="row">
@@ -34,25 +70,16 @@ const HomeTuitItem = (
                 <div className="col-2"><i class="bi bi-chat"></i> {post.replies} </div>
                 <div className="col-2"><i class="bi bi-share"></i> {post.retuits}</div>
                 <div className="col-2">
-                    <i onClick={() => dispatch(updateTuitThunk({
-                        ...post,
-                        likes: post.likes + 1
-                    }
-                    ))} className="bi bi-heart-fill me-2 text-danger"></i>
+                    <i onClick={liking}
+                        className="bi bi-heart-fill me-2 text-danger"></i>
                     {post.likes}
                 </div>
+
                 <div className="col-2">
-                    <i onClick={() => dispatch(updateTuitThunk({
-                        ...post,
-                        dislikes: post.dislikes + 1
-                    }
-                    ))} className="bi bi-hand-thumbs-down me-2 text-black"></i>
+                    <i onClick={disliking}
+                        className={fill}></i>
                     {post.dislikes}
                 </div>
-                {/* 
-                <div className="col-2">
-                    <LikeButton likes={post.likes} liked={post.liked} />
-                </div> */}
             </div>
         </li >
     );
